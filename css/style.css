@@ -1,1 +1,12 @@
-
+body {
+  background-color: #f3e5f5;
+}
+ul {
+  list-style: none;
+}
+h1 {
+  color: purple;
+}
+img {
+  border-radius: 10px;
+}
