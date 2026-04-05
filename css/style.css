@@ -25,6 +25,7 @@ li a {
   color: purple;
   font-weight: bold;
   font-size: 18px;
+  transition: color 0.3s;
 }
 
 li a:hover {
@@ -48,10 +49,20 @@ p {
   margin: 15px auto;
 }
 
+a {
+  color: purple;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #4a148c;
+}
 img {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   margin: 15px 0;
+  max-width: 100%;
+  height: auto;
 }
 
 iframe {
@@ -60,14 +71,25 @@ iframe {
   margin: 20px 0;
 }
 
-a {
-  color: purple;
+.membros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
 }
 
-a:hover {
-  color: #4a148c;
+.membro {
+  text-align: center;
+  flex: 0 1 150px; 
 }
 
+.membro img {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  width: 150px;
+  height: auto;
+}
 @media (max-width: 600px) {
   ul {
     flex-direction: column;
@@ -79,8 +101,7 @@ a:hover {
     width: 90%;
     height: 200px;
   }
-  img {
+  .membro img {
     width: 90%;
-    height: auto;
   }
 }
